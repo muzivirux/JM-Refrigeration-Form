@@ -260,55 +260,7 @@
         document.getElementById('JMRefrigerationForm').addEventListener('submit', function (event) {
             event.preventDefault(); // Prevent the default form submission
 
-            // Get the form values
-            var resetingForm = document.getElementById('totalrunninghrs').value;
-            var email = document.getElementById('remarks').value;
-            var email = document.getElementById('totalrunninghrs30').value;
-            var email = document.getElementById('remarks30').value;
-            var email = document.getElementById('totalrunninghrs10').value;
-            var email = document.getElementById('remarks10').value;
-            var email = document.getElementById('totalrunninghrsAC1').value;
-            var email = document.getElementById('remarksAC1').value;
-            var email = document.getElementById('remarksAC2').value;
-            var email = document.getElementById('totalrunninghrsDSEHF').value;
-            var email = document.getElementById('remarksDSEHF').value;
-            var email = document.getElementById('totalrunninghrsfan1').value;
-            var email = document.getElementById('remarksfan1').value;
-            var email = document.getElementById('totalrunninghrsfan2').value;
-            var email = document.getElementById('remarksfan2').value;
-            var email = document.getElementById('totalrunninghrsfan3').value;
-            var email = document.getElementById('remarksfan3').value;
-            var email = document.getElementById('totalrunninghrsCSCE').value;
-            var email = document.getElementById('remarksCSCE').value;
-            var email = document.getElementById('totalrunninghrsairC').value;
-
-            // Perform any additional validation or processing here
-
-
-
-            // Send the form data to the server (you can use AJAX or other techniques)
-
-            // Reset the form fields
-            document.getElementById('totalrunninghrs').value = '';
-            document.getElementById('remarks').value = '';
-            document.getElementById('totalrunninghrs30').value = '';
-            document.getElementById('remarks30').value = '';
-            document.getElementById('totalrunninghrs10').value = '';
-            document.getElementById('remarks10').value = '';
-            document.getElementById('totalrunninghrsAC1').value = '';
-            document.getElementById('remarksAC1').value = '';
-            document.getElementById('remarksAC2').value = '';
-            document.getElementById('totalrunninghrsDSEHF').value = '';
-            document.getElementById('remarksDSEHF').value = '';
-            document.getElementById('totalrunninghrsfan1').value = '';
-            document.getElementById('remarksfan1').value = '';
-            document.getElementById('totalrunninghrsfan2').value = '';
-            document.getElementById('remarksfan2').value = '';
-            document.getElementById('totalrunninghrsfan3').value = '';
-            document.getElementById('remarksfan3').value = '';
-            document.getElementById('totalrunninghrsCSCE').value = '';
-            document.getElementById('remarksCSCE').value = '';
-            document.getElementById('totalrunninghrsairC').value = '';
+            this.reset();
         });
 
     </script>
