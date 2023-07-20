@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
+
+
+
 </head>
 <!-- Logo -->
 <div class="logo">
@@ -26,9 +29,8 @@
                 <label for="RSD">Total running hours /day:</label>
                 <div class="RSD">
 
-                    <input type="text" class="input" id="availability-duration"
-                        name="AmmoniaCompressor-40 Total running hours/day" placeholder="HH:MM"
-                        pattern="^([01]?[0-9]|2[0-3]):[0-5][0-9]$" required>
+                    <input type="text" id="availability-duration" name="AmmoniaCompressor-40 Total running hours/day"
+                        placeholder="HH:MM" pattern="^([01]?[0-9]|2[0-3]):[0-5][0-9]$" class="time-input" required>
 
                     <!-- <label for="RSD">Remarks:</label> -->
                     <input type="text" id="remarks" name="AmmoniaCompressor-40 Remarks" required placeholder="Remarks">
@@ -38,9 +40,9 @@
                         <label for="RSD">Total running hours /day:</label>
                         <div class="RSD">
 
-                            <input type="text" class="input" id="availability-duration"
+                            <input type="text" id="availability-duration"
                                 name="AmmoniaCompressor-30 Total running hours/day" placeholder="HH:MM"
-                                pattern="^([01]?[0-9]|2[0-3]):[0-5][0-9]$" required>
+                                pattern="^([01]?[0-9]|2[0-3]):[0-5][0-9]$" class="time-input" required>
                             <!-- <label for="RSD">Remarks:</label> -->
                             <input type="text" id="remarks30" name="AmmoniaCompressor-30 Remarks" required
                                 placeholder="Remarks">
@@ -50,9 +52,9 @@
                                 <label for="RSD">Total running hours /day:</label>
                                 <div class="RSD">
 
-                                    <input type="text" class="input" id="availability-duration"
+                                    <input type="text" id="availability-duration"
                                         name="AmmoniaCompressor-10 Total running hours/day" placeholder="HH:MM"
-                                        pattern="^([01]?[0-9]|2[0-3]):[0-5][0-9]$" required>
+                                        pattern="^([01]?[0-9]|2[0-3]):[0-5][0-9]$" class="time-input" required>
                                     <!-- <label for="RSD">Remarks:</label> -->
                                     <input type="text" id="remarks10" name="AmmoniaCompressor-10 Remarks" required
                                         placeholder="Remarks">
@@ -64,7 +66,7 @@
 
                                             <input type="text" id="availability-duration"
                                                 name="AmmoniaCondenserNo1 Total running hours/day" placeholder="HH:MM"
-                                                pattern="^([01]?[0-9]|2[0-3]):[0-5][0-9]$" required>
+                                                pattern="^([01]?[0-9]|2[0-3]):[0-5][0-9]$" class="time-input" required>
                                             <!-- <label for="RSD">Remarks:</label> -->
                                             <input type="text" id="remarksAC1" name="AmmoniaCondenserNo1 Remarks"
                                                 required placeholder="Remarks">
@@ -77,7 +79,7 @@
                                                     <input type="text" id="availability-duration"
                                                         name="AmmoniaCondenserNo2 Total running hours/day"
                                                         placeholder="HH:MM" pattern="^([01]?[0-9]|2[0-3]):[0-5][0-9]$"
-                                                        required>
+                                                        class="time-input" required>
                                                     <!-- <label for="RSD">Remarks:</label> -->
                                                     <input type="text" id="remarksAC2"
                                                         name="AmmoniaCondenserNo2 Remarks" required
@@ -91,7 +93,8 @@
                                                             <input type="text" id="availability-duration"
                                                                 name="DayStorageEvaporatorHallFan Total running hours/day"
                                                                 placeholder="HH:MM"
-                                                                pattern="^([01]?[0-9]|2[0-3]):[0-5][0-9]$" required>
+                                                                pattern="^([01]?[0-9]|2[0-3]):[0-5][0-9]$"
+                                                                class="time-input" required>
                                                             <!-- <label for="RSD">Remarks:</label> -->
                                                             <input type="text" id="remarksDSEHF"
                                                                 name="DayStorageEvaporatorHallFan Remarks" required
@@ -106,7 +109,7 @@
                                                                         name="ColdStorageEvaporatorNo1Fan Total running hours/day"
                                                                         placeholder="HH:MM"
                                                                         pattern="^([01]?[0-9]|2[0-3]):[0-5][0-9]$"
-                                                                        required>
+                                                                        class="time-input" required>
                                                                     <!-- <label for="RSD">Remarks:</label> -->
                                                                     <input type="text" id="remarksfan1"
                                                                         name="ColdStorageEvaporatorNo1Fan Remarks"
@@ -123,7 +126,7 @@
                                                                                 name="ColdStorageEvaporatorNo2Fan Total running hours/day"
                                                                                 placeholder="HH:MM"
                                                                                 pattern="^([01]?[0-9]|2[0-3]):[0-5][0-9]$"
-                                                                                required>
+                                                                                class="time-input" required>
                                                                             <!-- <label for="RSD">Remarks:</label> -->
                                                                             <input type="text" id="remarksfan2"
                                                                                 name="ColdStorageEvaporatorNo2Fan Remarks"
@@ -140,7 +143,7 @@
                                                                                         name="ColdStorageEvaporatorNo3Fan Total running hours/day"
                                                                                         placeholder="HH:MM"
                                                                                         pattern="^([01]?[0-9]|2[0-3]):[0-5][0-9]$"
-                                                                                        required>
+                                                                                        class="time-input" required>
                                                                                     <!-- <label for="RSD">Remarks:</label> -->
                                                                                     <input type="text" id="remarksfan3"
                                                                                         name="ColdStorageEvaporatorNo3Fan Remarks"
@@ -158,6 +161,7 @@
                                                                                                 name="ColdstorageCorridorEvaporatorFan Total running hours/day"
                                                                                                 placeholder="HH:MM"
                                                                                                 pattern="^([01]?[0-9]|2[0-3]):[0-5][0-9]$"
+                                                                                                class="time-input"
                                                                                                 required>
                                                                                             <!-- <label for="RSD">Remarks:</label> -->
                                                                                             <input type="text"
@@ -178,6 +182,7 @@
                                                                                                         name="AirCompressor Total running hours/day"
                                                                                                         placeholder="HH:MM"
                                                                                                         pattern="^([01]?[0-9]|2[0-3]):[0-5][0-9]$"
+                                                                                                        class="time-input"
                                                                                                         required>
                                                                                                     <!-- <label for="RSD">Remarks:</label> -->
                                                                                                     <input type="text"
@@ -186,11 +191,74 @@
                                                                                                         required
                                                                                                         placeholder="Remarks">
                                                                                                 </div>
+                                                                                                <div class="sections">
+                                                                                                    <h2>Production Hall
+                                                                                                        Evaporator Fan
+                                                                                                        </h1>
+                                                                                                        <label
+                                                                                                            for="RSD">Total
+                                                                                                            running
+                                                                                                            hours
+                                                                                                            /day:</label>
+                                                                                                        <div
+                                                                                                            class="RSD">
+
+                                                                                                            <input
+                                                                                                                type="text"
+                                                                                                                id="availability-duration"
+                                                                                                                name="ProductionHallEvaporatorFan Total running hours/day"
+                                                                                                                placeholder="HH:MM"
+                                                                                                                pattern="^([01]?[0-9]|2[0-3]):[0-5][0-9]$"
+                                                                                                                class="time-input"
+                                                                                                                required>
+                                                                                                            <!-- <label for="RSD">Remarks:</label> -->
+                                                                                                            <input
+                                                                                                                type="text"
+                                                                                                                id="remarks"
+                                                                                                                name="ProductionHallEvaporatorFan Remarks"
+                                                                                                                required
+                                                                                                                placeholder="Remarks">
+                                                                                                        </div>
 
 
 
-                                                                                                <input type="submit"
-                                                                                                    value="Submit">
+                                                                                                        <div
+                                                                                                            class="sections">
+                                                                                                            <h2>Loading
+                                                                                                                Area
+                                                                                                                Evaporator
+                                                                                                                Fan
+                                                                                                                </h1>
+                                                                                                                <label
+                                                                                                                    for="RSD">Total
+                                                                                                                    running
+                                                                                                                    hours
+                                                                                                                    /day:</label>
+                                                                                                                <div
+                                                                                                                    class="RSD">
+
+                                                                                                                    <input
+                                                                                                                        type="text"
+                                                                                                                        id="availability-duration"
+                                                                                                                        name="loadingAreaEvaporatorFan Total running hours/day"
+                                                                                                                        placeholder="HH:MM"
+                                                                                                                        pattern="^([01]?[0-9]|2[0-3]):[0-5][0-9]$"
+                                                                                                                        class="time-input"
+                                                                                                                        required>
+                                                                                                                    <!-- <label for="RSD">Remarks:</label> -->
+                                                                                                                    <input
+                                                                                                                        type="text"
+                                                                                                                        id="remarks"
+                                                                                                                        name="loadingAreaEvaporatorFan Remarks"
+                                                                                                                        required
+                                                                                                                        placeholder="Remarks">
+                                                                                                                </div>
+
+
+
+                                                                                                                <input
+                                                                                                                    type="submit"
+                                                                                                                    value="Submit">
 
     </form>
 
@@ -309,6 +377,23 @@
             if (isNaN(hours) || isNaN(minutes) || minutes >= 60) {
                 durationInput.setCustomValidity('Please enter a valid duration in HH:MM format with hours under 23 and minutes under 60.');
             }
+        });
+
+        // automatically add colon between HH and MM
+        document.addEventListener('DOMContentLoaded', function () {
+            const timeInputs = document.querySelectorAll('.time-input');
+
+            timeInputs.forEach(function (inputElement) {
+                inputElement.addEventListener('input', function (event) {
+                    const inputValue = event.target.value.trim();
+
+                    // Check if the input value has reached 2 characters (HH)
+                    if (inputValue.length === 2 && !inputValue.includes(':')) {
+                        // Add the colon ':' after the HH part
+                        event.target.value = inputValue + ':';
+                    }
+                });
+            });
         });
     </script>
     <!-- End of check time validations -->
